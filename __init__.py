@@ -46,7 +46,7 @@ def _create_default_config():
                 {
                     "name": "New note",
                     "subtext": "Add a new note to the vault",
-                    "uri": "obsidian://new?vault={{vault}}&name={{q}}"
+                    "uri": "obsidian://new?vault=REPLACE_WITH_VAULT_NAME&name={{q}}"
                 }
             ],
         }
