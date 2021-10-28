@@ -17,7 +17,7 @@ import sys
 import json
 
 __title__ = "Obsidian"
-__version__ = "0.0.0"
+__version__ = "0.0.1"
 __triggers__ = "ob "
 __authors__ = "J0rd1smit"
 __exec_deps__ = []
