@@ -29,15 +29,11 @@ PATH_TO_ICON = os.path.dirname(__file__) + "/plugin.png"
 
 iconPath = iconLookup("albert")
 
-#vault_path = Path("/home/jordi/Dropbox/obsidian")
-#vault_name = "obsidian"
-
 
 def initialize():
     PATH_TO_CONFIG_FOLDER.mkdir(parents=True, exist_ok=True)
 
     if not PATH_TO_CONFIG_DATA.exists():
-        #PATH_TO_CONFIG_DATA.touch()
         _create_default_config()
 
             
@@ -55,11 +51,6 @@ def _create_default_config():
             ],
         }
         json.dump(data, f, indent=4)
-
-
-# Can be omitted
-def finalize():
-    pass
 
 
 def handleQuery(query):
