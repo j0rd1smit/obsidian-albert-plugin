@@ -124,7 +124,7 @@ def create_uri_item(
     
     name = uri_config["name"]
     subtext = uri_config["subtext"]
-    uri_template = uri_config["uri_template"]
+    uri_template = uri_config["uri"]
 
     q = query.lower()
     for i in name.lower().split():
